@@ -13,11 +13,9 @@ class StockTitle extends React.Component {
         return (
             <header className='title_buySell_section'>
                 <div className='title_buySell_title'>
-                    Buy AAPL
+                    Buy {this.props.currentStock}
                 </div>
-                
                     <BuyType changeMode={this.props.changeMode}/>
-               
             </header>
         );
     }

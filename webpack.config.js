@@ -2,7 +2,7 @@ var webpack = require('webpack');
 var path = require('path');
 
 module.exports  = {
-    mode: 'production',
+    mode: 'development',
     entry : __dirname + '/client/index.jsx',
     module : {
         rules : [

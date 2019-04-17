@@ -2,8 +2,8 @@ var express = require('express');
 var bodyParser  = require('body-parser');
 var cors = require('cors');
 var mongoose = require('mongoose');
-var db = require('../database-mongodb/index.js');
-var Stock = require('../database-mongodb/Stock.js');
+var db = require('../database/index.js');
+var Stock = require('../database/Stock.js');
 
 var port = 8080;
 var app = express();

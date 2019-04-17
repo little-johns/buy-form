@@ -14,13 +14,13 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
-app.use(express.static(__dirname + '/../public/'));
+app.use('/stocks/:id', express.static(__dirname + '/../public/'));
 
-app.get('/stocks/:query', (req, res) => {
+app.get('/api/stocks/:query', (req, res) => {
     var query = req.params.query;
     var dbQuery = {ticker : req.params.query}
 
-     if(parseInt(query)) {
+     if(parseInt(query) || Number(query) === 0) {
          dbQuery = {id : req.params.query}
      }
     

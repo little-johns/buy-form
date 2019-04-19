@@ -38,3 +38,29 @@ npm install
 ```
 
 # stock-chart
+
+## CRUD API
+
+1. CREATE
+
+```sh
+POST - /api/stocks/:stockId
+```
+
+2. READ
+
+```sh
+GET - /api/stocks/:stockId
+```
+
+3. UPDATE
+
+```sh
+PATCH - /api/stocks/:stockId
+```
+
+4. DELETE
+
+```sh
+DELETE - /api/stocks/:stockId
+```

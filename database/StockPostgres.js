@@ -6,6 +6,6 @@ module.exports = (sequelize, type) => {
         autoIncrement: true
       },
       ticker: type.STRING,
-      price: type.INTEGER
+      price: type.FLOAT
   }, {timestamps: false})
 }

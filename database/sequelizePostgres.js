@@ -1,7 +1,8 @@
 const Sequelize = require('sequelize');
 const StockModel = require('./StockPostgres');
+const config = require('./postgresConfig');
 
-const sequelize = new Sequelize('littlejohnstocks', 'postgres', '071396', {
+const sequelize = new Sequelize('littlejohnstocks', 'postgres', config.password, {
   host: 'localhost',
   dialect: 'postgres'
 });

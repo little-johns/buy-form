@@ -6,8 +6,7 @@ const stockSchema = new mongoose.Schema({
     id : Number,
     name : String,
     ticker : String, 
-    currentPrice : Number,
-    previousPrice : Number, 
+    currentPrice : Number
 });
 
 const Stock = mongoose.model('Stock', stockSchema);

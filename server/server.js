@@ -1,9 +1,7 @@
 var express = require('express');
 var bodyParser  = require('body-parser');
 var cors = require('cors');
-var mongoose = require('mongoose');
-var db = require('../database/index.js');
-var Stock = require('../database/Stock.js');
+var db = require('../database/postgresQueries');
 
 var port = 8080;
 var app = express();
@@ -16,23 +14,7 @@ app.use(bodyParser.json())
 
 app.use('/stocks/:id', express.static(__dirname + '/../public/'));
 
-app.get('/api/stocks/:query', (req, res) => {
-    var query = req.params.query;
-    var dbQuery = {ticker : req.params.query}
-
-     if(parseInt(query) || Number(query) === 0) {
-         dbQuery = {id : req.params.query}
-     }
-    
-
-    Stock.find(dbQuery, (err, data) => {
-        if(err) { 
-            throw err;
-        }
-            res.send(JSON.stringify(data))
-    });
-    
-})
+app.get('/api/stocks/:query', db.getStock)
 
 
 app.listen(port, () => {

@@ -31,7 +31,7 @@ class App extends React.Component {
         })
         .then(result => {
             appThis.setState({
-                price : result[0].currentPrice,
+                price : result[0].price,
                 currentStock: result[0].ticker
             })
         })

@@ -1,11 +1,23 @@
 const Sequelize = require('sequelize');
-const StockModel = require('./StockPostgres');
+// const StockModel = require('./StockPostgres');
 const config = require('./postgresConfig');
 
 const sequelize = new Sequelize('littlejohnstocks', 'postgres', config.password, {
   host: 'localhost',
   dialect: 'postgres'
 });
+
+StockModel = (sequelize, type) => {
+  return sequelize.define('stock', {
+      id: {
+        type: type.INTEGER,
+        primaryKey: true,
+        autoIncrement: true
+      },
+      ticker: type.STRING,
+      price: type.FLOAT
+  }, {timestamps: false})
+}
 
 StockModel(sequelize, Sequelize)
 

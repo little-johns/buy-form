@@ -3,7 +3,7 @@
     box-sizing: inherit;
 } */
 
-@font-face {
+/* @font-face {
     font-family: system;
     src: url('./fonts/FF_DIN_Pro_Regular_Italic.otf');
 }
@@ -34,7 +34,7 @@
     font-weight: 500;
     src: url('./fonts/FF_DIN_Pro_Medium_Italic.otf')
 
-}
+} */
 
 #reviewOrder_buySell_backSpan, #shares_buySell_label, .reviewOrder_buySell_buttonDescription, .estimatedCost_buySell_title, .dropDownInput_buySell_selectArrow, 
 .dropDownInput_buySell_selectArrowZone, .dropDownInput_buySell_selectValueLabel, .dropDownInput_buySell_selectMultiValue, 

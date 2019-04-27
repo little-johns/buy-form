@@ -38,7 +38,7 @@ class App extends React.Component {
     }
 
     changeMode(event) {
-        console.log('trim', event.target.textContent.trim())
+        // console.log('trim', event.target.textContent.trim())
         this.setState({
             mode : event.target.textContent.trim()
         }
@@ -48,19 +48,21 @@ class App extends React.Component {
 
     handleShares(e) {
         var val = e.target.value;
-        console.log(e.target.value === '');
+        // console.log(e.target.value === '');
         if(e.target.value === '' || e.target.value === '0') {
-            console.log('okk')
+            // console.log('okk')
             val = 'none';
         }
         this.setState({
            shares : val
-        }, () => {console.log(this.state.shares)})
+        }, () => {
+            // console.log(this.state.shares)
+        })
     }
 
     render() {
         var midContent;
-        console.log(this.state.mode)
+        // console.log(this.state.mode)
         if(this.state.mode === 'Market Order') {
             midContent = 
             (

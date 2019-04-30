@@ -15,7 +15,7 @@ app.use(cors());
 
 app.use('/stocks/:id', express.static(__dirname + '/../public/'));
 
-app.get('/api/stocks/:query', db.getStock)
+app.get('/api/stocks/:query', db.getCache)
 
 
 app.listen(port, () => {

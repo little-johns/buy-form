@@ -2,3 +2,4 @@ node_modules
 goblinhood.pem
 data.csv
 /database/postgresConfig.js
+SDCservice.pem

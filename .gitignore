@@ -3,3 +3,5 @@ goblinhood.pem
 data.csv
 /database/postgresConfig.js
 SDCservice.pem
+newrelic.js
+SDCdatabase2.pem

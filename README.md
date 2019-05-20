@@ -1,6 +1,6 @@
 # Little Johns
 
-> A full-stack stock buying application. This repo is for the buy form.
+A full-stack stock buying application. This repo is for the buy form.
 
 ## Related Projects
 

@@ -1,32 +1,20 @@
-# Project Name
+# Little Johns
 
-> Project description
+> A full-stack stock buying application. This repo is for the buy form.
 
 ## Related Projects
 
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-
-## Table of Contents
-
-1. [Usage](#Usage)
-1. [Requirements](#requirements)
-1. [Development](#development)
+  - https://github.com/little-johns/stock-chart
+  - https://github.com/little-johns/Price-Paid-Average-Service
+  - https://github.com/little-johns/news
 
 ## Usage
 
-> Some usage instructions
-
-## Requirements
-
-An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
-
-- Node 6.13.0
-- etc
-
-## Development
+- Seed the Mongo database and start the Express server by running 'npm run start'
+- Create a webpack bundle by running 'npm run webpack-dev'
+- Navigate to localhost:8080/stocks/* where * is a number from 1-10000000 if you've seeded with 10M stocks
+- The buy form should display that stock's ticker symbol and price
+- Run 'npm run test' to run tests
 
 ### Installing Dependencies
 
@@ -37,30 +25,10 @@ npm install -g webpack
 npm install
 ```
 
-# stock-chart
+## API - to read a stock's price
 
-## CRUD API
-
-1. **CREATE**
-
-```sh
-POST - /api/stocks/:stockId
-```
-
-2. **READ**
+**READ**
 
 ```sh
 GET - /api/stocks/:stockId
-```
-
-3. **UPDATE**
-
-```sh
-PATCH - /api/stocks/:stockId
-```
-
-4. **DELETE**
-
-```sh
-DELETE - /api/stocks/:stockId
 ```
